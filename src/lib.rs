@@ -83,6 +83,8 @@ pub fn read_code(code_str: &str) -> Result<Vec<Instruction>, ReadError> {
     let mut block_buf = vec![Block(0, CodeBuf::new())];
     let mut pos: usize = 0;
     macro_rules! current_buf { () => { &mut block_buf.last_mut().unwrap().1 } }
+    macro_rules! add_instr { ($instruction:expr) => { Ok(current_buf!().push($instruction)) } }
+    use Instruction::*;
     for c in code_str.chars() {
         if let Ok(_) = match c {
             '[' => Ok(block_buf.push(Block(pos, CodeBuf::new()))),
@@ -97,14 +99,15 @@ pub fn read_code(code_str: &str) -> Result<Vec<Instruction>, ReadError> {
                 root.push(Instruction::End(start));
                 Ok(())
             },
-            '+' => Ok(current_buf!().push(Instruction::Add)),
-            '-' => Ok(current_buf!().push(Instruction::Sub)),
-            '>' => Ok(current_buf!().push(Instruction::Right)),
-            '<' => Ok(current_buf!().push(Instruction::Left)),
-            ':' => Ok(current_buf!().push(Instruction::Store)),
-            ';' => Ok(current_buf!().push(Instruction::Goto)),
-            '.' => Ok(current_buf!().push(Instruction::Write)),
-            ',' => Ok(current_buf!().push(Instruction::Read)),
+            '+' => add_instr!(Add),
+            '-' => add_instr!(Sub),
+            '>' => add_instr!(Right),
+            '<' => add_instr!(Left),
+            ':' => add_instr!(Store),
+            ';' => add_instr!(Goto),
+            '.' => add_instr!(Write),
+            ',' => add_instr!(Read),
+            '|' => add_instr!(Custom(&|state| std::mem::swap(&mut state.stored_location, &mut state.cursor))),
             _ => Err(())
         } {
             pos += 1;
