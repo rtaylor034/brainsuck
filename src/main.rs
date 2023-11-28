@@ -17,6 +17,5 @@ fn main() -> std::io::Result<()> {
         instructions[program_state.program_pointer].perform(&mut program_state, &mut stdin, &mut stdout);
         program_state.program_pointer += 1;
     }
-    eprintln!("Memory after run:\n {:#?}", program_state.memory);
     Ok(())
 }

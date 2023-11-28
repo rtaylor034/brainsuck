@@ -107,7 +107,10 @@ pub fn read_code(code_str: &str) -> Result<Vec<Instruction>, ReadError> {
             ';' => add_instr!(Goto),
             '.' => add_instr!(Write),
             ',' => add_instr!(Read),
+            // swap
             '|' => add_instr!(Custom(&|state| std::mem::swap(&mut state.stored_location, &mut state.cursor))),
+            //debug
+            '?' => add_instr!(Custom(&|state| debug_print(state))),
             _ => Err(())
         } {
             pos += 1;
@@ -118,4 +121,15 @@ pub fn read_code(code_str: &str) -> Result<Vec<Instruction>, ReadError> {
         return Err(ReadError::UnclosedBlock(block_buf.last().unwrap().0));
     }
     Ok(block_buf.pop().unwrap().1)
+}
+fn debug_print(state: &State) {
+    eprintln!("'?': {}", state.program_pointer);
+    for (i, cell) in state.memory.iter().enumerate() {
+        let mark = {
+            if i == state.cursor { "<" }
+            else if i == state.stored_location { ":" }
+            else { "" }
+        };
+        eprintln!( " - {} {}", cell, mark);
+    } 
 }
