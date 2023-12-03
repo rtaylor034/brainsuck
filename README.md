@@ -28,13 +28,13 @@ Path to file that contains Brainsuck code to interpret.
 
 ## Additional Instructions
 
-Brainsuck introduces the `stored cursor`, which is a stored location in the memory array.
+Brainsuck introduces the `SC` (stored cursor), which is a stored location in the memory array.
 
 | Instruction | Description |
 | ----------- | ----------- |
-| `:` | Moves the `stored cursor` to the cursor. |
-| `;` | Moves the cursor to the `stored cursor`. |
-| `\|` | Swaps the cursor and the `stored cursor`. |
+| `:` | Moves the `SC` to the cursor. |
+| `;` | Moves the cursor to the `SC`. |
+| `\|` | Swaps the cursor and the `SC`. |
 
 ### Debug Instruction:
 
