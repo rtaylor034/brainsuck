@@ -22,8 +22,9 @@ Path to file that contains Brainsuck code to interpret.
 
 # Documentation
 
-This documentation assumes prior knowledge of [Brainfuck]. \
-*(A great place to learn is an [online interpreter].)*
+**This documentation assumes prior knowledge of [Brainfuck].**
+
+*A great place to learn is an [online interpreter].*
 
 ## Additional Instructions
 
@@ -35,12 +36,14 @@ Brainsuck introduces the `stored cursor`, which is a stored location in the memo
 | `;` | Moves the cursor to the `stored cursor`. |
 | `\|` | Swaps the cursor and the `stored cursor`. |
 
+### Debug Instruction:
+
 This particular interpreter also includes recognition of a 'debug' instruction. \
 *This is NOT part of the Brainsuck language itself.*
 
 | Instruction | Description |
 | ----------- | ----------- |
-| `?` | Prints the current state of the memory array, cursor ('<'), and `stored cursor` (':'). |
+| `?` | Prints the current state of memory to standard error. |
 
 ### Dev Comments:
 
