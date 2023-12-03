@@ -7,9 +7,10 @@
 
 ## Description
 
-Brainsuck is the esotaric programming language [Brainfuck] with the added feature of a stored cursor location, along with 3 additional instructions to control it.
+Brainsuck is the esotaric programming language [Brainfuck] with the added feature of a stored cursor location, along with 3 additional instructions regarding it.
 
-The source code contained in this repository is a simple Brainsuck compiler that also recognizes an additional `debug` instruction for ease of use.
+The source code contained in this repository is a simple Brainsuck compiler. \
+*(With the additional recognition of a [debug instruction])*
 
 # Command Usage
 
@@ -18,3 +19,29 @@ The source code contained in this repository is a simple Brainsuck compiler that
 #### `<source file>`
 
 Path to file that contains Brainsuck code to interpret.
+
+# Documentation
+
+This documentation assumes prior knowledge of [Brainfuck]. \
+*(A great place to learn is an [online interpreter].)*
+
+## Additional Instructions
+
+Brainsuck introduces the `stored cursor`, which is a stored location in the memory array.
+
+| Instruction | Description |
+| ----------- | ----------- |
+| `:` | Moves the `stored cursor` to the cursor. |
+| `;` | Moves the cursor to the `stored cursor`. |
+| `\|` | Swaps the cursor and the `stored cursor`. |
+
+This particular interpreter also includes recognition of a 'debug' instruction. \
+*This is NOT part of the Brainsuck language itself.*
+
+| Instruction | Description |
+| ----------- | ----------- |
+| `?` | Prints the current state of the memory array, cursor ('<'), and `stored cursor` (':'). |
+
+### Dev Comments:
+
+> `src/lib.rs` is written for easy addition and/or modification of interpreted instructions.
