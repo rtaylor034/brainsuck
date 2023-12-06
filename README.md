@@ -7,10 +7,10 @@
 
 ## Description
 
-Brainsuck is the esotaric programming language [Brainfuck] with the added feature of a stored cursor location, along with 3 additional instructions regarding it.
+Brainsuck is the esotaric programming language [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with the added feature of a stored cursor location, along with 3 additional instructions regarding it.
 
 The source code contained in this repository is a simple Brainsuck compiler. \
-*(With the additional recognition of a [debug instruction])*
+*(With the additional recognition of a [debug instruction](https://github.com/rtaylor034/brainsuck#debug-instruction)*
 
 # Command Usage
 
@@ -22,9 +22,9 @@ Path to file that contains Brainsuck code to interpret.
 
 # Documentation
 
-**This documentation assumes prior knowledge of [Brainfuck].**
+**This documentation assumes prior knowledge of [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck).**
 
-*A great place to learn is an [online interpreter].*
+*A great place to learn is an [online interpreter](https://minond.xyz/brainfuck).*
 
 ## Additional Instructions
 
