@@ -7,7 +7,7 @@
 
 ## Description
 
-Brainsuck is a programming language that is defined by [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a second 'stored cursor'.
+Brainsuck is a programming language that is defined by [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
 
 The source code contained in this repository is a simple Brainsuck interpreter. \
 *(This interpreter also interprets an additional [debug instruction](https://github.com/rtaylor034/brainsuck#debug-instruction))*
