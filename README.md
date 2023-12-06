@@ -38,7 +38,7 @@ Brainsuck introduces the `SC` (stored cursor), which is a stored location in the
 
 ### Debug Instruction:
 
-This particular interpreter also includes recognition of a 'debug' instruction. \
+This particular interpreter also interprets a 'debug' instruction. \
 *This is NOT part of the Brainsuck language itself.*
 
 | Instruction | Description |
