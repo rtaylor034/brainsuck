@@ -36,8 +36,8 @@ The `SC` starts at index 0 in the memory array, and can only be controlled by vi
 
 | Instruction | Description |
 | ----------- | ----------- |
-| `:` | Jumps the `SC` to the cursor. |
-| `;` | Jumps the cursor to the `SC`. |
+| `:` | Moves the `SC` to the cursor. |
+| `;` | Moves the cursor to the `SC`. |
 | `\|` | Swaps the cursor and the `SC`. |
 
 ## Debug Instruction
