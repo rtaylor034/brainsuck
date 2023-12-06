@@ -40,7 +40,7 @@ The `SC` starts at index 0 in the memory array, and can only be controlled by vi
 | `;` | Jumps the cursor to the `SC`. |
 | `\|` | Swaps the cursor and the `SC`. |
 
-## Debug Instruction:
+## Debug Instruction
 
 This particular interpreter also interprets the `?` debug instruction.
 
