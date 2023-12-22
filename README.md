@@ -30,7 +30,7 @@ Path to file that contains Brainsuck code to interpret.
 
 Brainsuck introduces the `SC` (stored cursor), which is a stored location in the memory array.
 
-The `SC` starts at index 0, and can only be controlled by via the `:` and `|` instructions.
+The `SC` starts at index 0, and can only be controlled via the `:` and `|` instructions.
 
 ### Instructions:
 
