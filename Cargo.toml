@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-gfunc = { path = "/home/gfunction/Projects/Rust/Lib/gfunc/v0.1", features = ["run"] }
+gfunc = { path = "bundled_dependencies/gfunc/v0.1", features = ["run"] }
 
