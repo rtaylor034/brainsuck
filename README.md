@@ -7,7 +7,7 @@
 
 ## Description
 
-Brainsuck is a programming language that is defined by [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
+Brainsuck is [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
 
 The source code contained in this repository is a simple Brainsuck interpreter. \
 *(This interpreter also interprets an additional [debug instruction](https://github.com/rtaylor034/brainsuck#debug-instruction))*
@@ -16,23 +16,16 @@ The source code contained in this repository is a simple Brainsuck interpreter. 
 
 ```brainsuck <source file>```
 
-#### `<source file>`
-
+`<source file>`: \
 Path to file that contains Brainsuck code to interpret.
 
 # Documentation
 
-**This documentation only covers the features that Brainsuck adds to [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck).**
-
-*A great place to learn about Brainfuck is an [online interpreter](https://minond.xyz/brainfuck).*
+For Brainfuck instructions, see it's [wiki](https://en.wikipedia.org/wiki/Brainfuck) or an [online interpreter](https://minond.xyz/brainfuck).
 
 ## The Stored Cursor
 
-Brainsuck introduces the `SC` (stored cursor), which is a stored location in the memory array.
-
-The `SC` starts at index 0, and can only be controlled via the `:` and `|` instructions.
-
-### Instructions:
+Brainsuck introduces the `SC` (stored cursor), which is a second cursor that starts at index 0, and can only be controlled via the `:` and `|` instructions.
 
 | Instruction | Description |
 | ----------- | ----------- |
@@ -40,10 +33,6 @@ The `SC` starts at index 0, and can only be controlled via the `:` and `|` instr
 | `;` | Moves the cursor to the `SC`. |
 | `\|` | Swaps the cursor and the `SC`. |
 
-## Debug Instruction
+### Debug Instruction
 
-This particular interpreter also interprets the `?` debug instruction.
-
-| Instruction | Description |
-| ----------- | ----------- |
-| `?` | Prints the current state of memory to standard error; does not affect the state of the program. |
+This particular interpreter also interprets the `?` debug instruction, which prints the current state of memory to standard error.
