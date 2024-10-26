@@ -4,9 +4,9 @@ Runs fizzbuzz for numbers 1-255, printing '*' if neither fizz or buzz
 [
     counters to 3 and 5
     >+>+> :
-    >+>+;
-    << --- [+++ ;>-<]; set 1__ if % 3
-    < ----- [+++++ ;>>-<<]; set _1_ if % 5
+    >+>+; set 11_
+    << --- [+++ ;>-<]; set 0__ if % 3 != 0
+    < ----- [+++++ ;>>-<<]; set _0_ if % 5 != 0
     >>>+; set __1
     >
     (if 1__ print "fizz") [ -
