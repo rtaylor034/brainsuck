@@ -11,7 +11,7 @@ This particular interpreter also interprets an additional debug instruction that
 
 # Command Usage
 
-```brainsuck <source file>```
+#### ```brainsuck <source file>```
 
 `<source file>`: \
 Path to file that contains Brainsuck code to interpret.
