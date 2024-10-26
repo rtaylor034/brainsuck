@@ -1,0 +1,22 @@
+instead of doing this (brainfuck):
+*do some work*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+* do some work*
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*do some work*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+* do some work*
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+now you can do this!!1 (brainSUCK):
+*do some work*
+:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+* do some work*
+|
+*do some work*
+|
+* do some work*
+|
+
+just imagine the time spent keeping track of cursor location and '><' characters you will save!1
