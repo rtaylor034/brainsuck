@@ -9,7 +9,7 @@
 
 Brainsuck is [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
 
-The source code contained in this repository is a simple Brainsuck interpreter. \
+The source code contained in this repository is a simple Brainsuck interpreter written in Rust. \
 *(This interpreter also interprets an additional [debug instruction](https://github.com/rtaylor034/brainsuck#debug-instruction))*
 
 # Command Usage
