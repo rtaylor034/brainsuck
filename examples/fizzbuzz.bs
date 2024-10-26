@@ -1,5 +1,5 @@
 Code written by rtaylor034 on github
-
+Runs fizzbuzz for numbers 1-255, printing '*' if neither fizz or buzz
 > +
 [
     counters to 3 and 5
