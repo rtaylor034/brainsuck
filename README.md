@@ -2,7 +2,7 @@
 
 > Brainfuck with a second cursor.
 
-## Overview
+# Overview
 
 Brainsuck is [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
 
