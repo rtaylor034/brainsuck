@@ -5,7 +5,7 @@
 [![Gfunction Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Frtaylor034%2Fproject-tags%2Fmain%2Ftags%2Fstatus%2Fusable.json)](https://github.com/rtaylor034/project-tags)
 [![Gfunction Stance](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Frtaylor034%2Fproject-tags%2Fmain%2Ftags%2Fstance%2Farchived.json)](https://github.com/rtaylor034/project-tags)
 
-## Description
+## Overview
 
 Brainsuck is [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) with 3 additional instructions regarding a 'stored cursor'.
 
@@ -23,9 +23,12 @@ Path to file that contains Brainsuck code to interpret.
 
 For Brainfuck instructions, see it's [wiki](https://en.wikipedia.org/wiki/Brainfuck) or an [online interpreter](https://minond.xyz/brainfuck).
 
+Brainsuck programs have the extension `.bs`. \
+Example programs are provided in the [examples](examples/) directory.
+
 ## The Stored Cursor
 
-Brainsuck introduces the `SC` (stored cursor), which is a second cursor that starts at index 0, and can only be controlled via the `:` and `|` instructions.
+Brainsuck introduces the `SC`, which is a second cursor location that starts at index 0, and can be interacted with via the following instructions.
 
 | Instruction | Description |
 | ----------- | ----------- |
